@@ -5,8 +5,8 @@
     "details": "Built with React and Tailwind CSS, this app uses the Spotify API to fetch and display lyrics in sync with the currently playing song.",
     "tags": ["React", "Tailwind", "Spotify API"],
     "github": "https://github.com/mrinal1404/lyrics-finder",
-    "demo": "https://lyrics.mrinal.live",
-    "image": "./assets/images/ani1.json"
+    "demo": "https://mrinal140420.github.io/spotifyFrontend/",
+    "image": "https://mrinal140420.github.io/port/assets/images/ani1.json"
   },
   {
     "title": "MAASS",
@@ -15,7 +15,7 @@
     "tags": ["HTML/CSS", "MEDIAPIPE", "Gemini API", "TTS", "STS"],
     "github": "https://github.com/mrinal140420/chatbot_without_Auth.git",
     "demo": "https://mrinal140420.github.io/chatbot_without_Auth/",
-    "image": "./assets/images/ani2.json"
+    "image": "https://mrinal140420.github.io/port/assets/images/ani2.json"
   },
   {
     "title": "ASL Letter Recognizer",
@@ -24,7 +24,7 @@
     "tags": ["Python", "OpenCV", "MediaPipe", "TensorFlow", "ASL"],
     "github": "https://github.com/mrinal140420/asl_letter_recogniser",
     "demo": "https://mrinal140420.github.io/ASL-Recogniser/",
-    "image": "./assets/images/ani3.json"
+    "image": "https://mrinal140420.github.io/port/assets/images/ani3.json"
   },
   {
     "title": "Text Summarizer",
@@ -33,7 +33,7 @@
     "tags": ["Python", "NLP", "BERT", "TextRank", "Summarization"],
     "github": "https://github.com/mrinal140420/text_summariser",
     "demo": "https://mrinal140420.github.io/voice-text-summarizer/",
-    "image": "./assets/images/ani4.json"
+    "image": "https://mrinal140420.github.io/port/assets/images/ani4.json"
   },
   {
   "title": "AeroTrack",
@@ -42,7 +42,8 @@
   "tags": ["React", "AQI", "OpenAQ", "ISRO", "PWA"],
   "github": "https://github.com/mrinal140420/AeroTrack",
   "demo": "https://mrinal140420.github.io/AeroTrack/",
-  "image": "./assets/images/ani5.json"
+  "image": "https://mrinal140420.github.io/port/assets/images/ani5.json"
 }
+
 
 ]
