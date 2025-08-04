@@ -29,7 +29,7 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-name">Mrinal Sahoo</h1>
-    <p class="hero-title"><span class="typing-text">I’m a Developer | Cybersecurity Enthusiast | Freelancer | Sportsperson </span></p>
+   <p class="hero-title">I’m a <span class="typing-text"></span></p>
   </div>
 </section>
 
@@ -53,22 +53,22 @@
 <script src="js/style.js"></script>
 <script>
   const typingText = document.querySelector(".typing-text");
-  const texts = ["I'm a Developer", "I'm a Cybersecurity Enthusiast ", "I'm a Freelancer", "I'm a Sportsperson"];
+  const texts = ["Developer", "Cybersecurity Enthusiast", "Freelancer", "Sportsperson"];
   let index = 0;
   let char = 0;
   let isDeleting = false;
 
   function type() {
     const currentText = texts[index];
-    if (isDeleting) {
-      typingText.textContent = currentText.substring(0, char--);
-    } else {
-      typingText.textContent = currentText.substring(0, char++);
-    }
+    const visibleText = isDeleting
+      ? currentText.substring(0, char--)
+      : currentText.substring(0, char++);
 
-    if (!isDeleting && char === currentText.length) {
+    typingText.textContent = visibleText;
+
+    if (!isDeleting && char === currentText.length + 1) {
       isDeleting = true;
-      setTimeout(type, 1500);
+      setTimeout(type, 1500); // Pause after full word
       return;
     }
 
@@ -84,6 +84,7 @@
 </script>
 </body>
 </html>
+
 
 
 
