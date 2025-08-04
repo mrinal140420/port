@@ -1,0 +1,45 @@
+<!-- Contact Section -->
+<section class="section contact-section">
+  <div class="section-header">
+    <p class="sub-heading">Feel free to contact me anytime</p>
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="contact-grid">
+    <!-- Left: Contact Form -->
+    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <h3>Message Me</h3>
+
+      <!-- ✅ Required Web3Forms keys -->
+      <input type="hidden" name="access_key" value="51d24a9f-e11b-4d54-abb5-0bf846e8d848">
+      <input type="hidden" name="redirect" value="thankyou.html">
+
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+      <!-- hCaptcha (only if enabled in Web3Forms dashboard) -->
+      <input type="hidden" name="h-captcha-response" id="h-captcha-response" />
+
+      <button type="submit" class="btn green">📨 Send Message</button>
+    </form>
+
+    <!-- Right: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>Always available for freelance work if the right project comes along. Feel free to contact me!</p>
+
+      <ul class="info-list">
+        <li><i class="fas fa-user-circle"></i><strong>Name</strong><br>Mrinal Sahoo</li>
+        <li><i class="fas fa-map-marker-alt"></i><strong>Location</strong><br>Kolkata, India</li>
+        <li><i class="fas fa-phone"></i><strong>Call Me</strong><br>+91 83919 38670</li>
+        <li><i class="fas fa-paper-plane"></i><strong>Email Me</strong><br><a href="mailto:mrinalsahoo25@gmail.com">mrinalsahoo25@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

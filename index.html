@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mrinal Sahoo | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header transparent-header">
+  <div class="nav">
+    <h1 class="logo">Mrinal.Dev</h1>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-name">Mrinal Sahoo</h1>
+    <p class="hero-title"><span class="typing-text">I’m a Developer | Designer | Freelancer</span></p>
+  </div>
+</section>
+
+<!-- Social Media Sidebar -->
+<div class="social-sidebar">
+  <ul>
+    <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+    <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+    <li><a href="https://linkedin.com/in/mrinal-sahoo-483835283" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    <li><a href="https://github.com/mrinal140420" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+    <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+  </ul>
+</div>
+
+<!-- Language Switcher -->
+<div class="lang-switch">
+  <span>ENG</span>
+  <span>JAP</span>
+</div>
+
+<!-- Footer
+<footer class="footer">
+  <p>© 2025 Mrinal Sahoo. Built with ❤️</p>
+</footer> -->
+
+<!-- Scripts -->
+<script src="js/style.js"></script>
+<script>
+  const typingText = document.querySelector(".typing-text");
+  const texts = ["I’m a Developer", "I’m a Designer", "I’m a Freelancer"];
+  let index = 0;
+  let char = 0;
+  let isDeleting = false;
+
+  function type() {
+    const currentText = texts[index];
+    if (isDeleting) {
+      typingText.textContent = currentText.substring(0, char--);
+    } else {
+      typingText.textContent = currentText.substring(0, char++);
+    }
+
+    if (!isDeleting && char === currentText.length) {
+      isDeleting = true;
+      setTimeout(type, 1500);
+      return;
+    }
+
+    if (isDeleting && char === 0) {
+      isDeleting = false;
+      index = (index + 1) % texts.length;
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100);
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+</script>
+</body>
+</html>
