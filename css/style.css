@@ -90,13 +90,32 @@ ul {
   font-size: 20px;
   margin-top: 12px;
   color: #ccc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  white-space: nowrap;
 }
+
 .typing-text {
+  font-weight: 600;
+  color: var(--primary-color);
   border-right: 2px solid #fff;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  min-height: 1em;
 }
+.typing-text::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 
 /* SOCIAL SIDEBAR */
 .social-sidebar {
@@ -569,3 +588,4 @@ body.overlay-open .page-overlay {
   cursor: pointer;
   z-index: 10000;
 }
+
