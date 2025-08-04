@@ -67,7 +67,7 @@ window.addEventListener("scroll", () => {
 
 // 🟡 Load Projects from JSON
 function loadProjects(container) {
-  fetch("assets/data/projects.json")
+  fetch("https://mrinal140420.github.io/port/assets/data/projects.json")
     .then((res) => res.json())
     .then((projects) => {
       container.innerHTML = ""; // Clear existing content
@@ -104,3 +104,4 @@ function loadProjects(container) {
       container.innerHTML = "<p class='error'>Failed to load projects.</p>";
     });
 }
+
