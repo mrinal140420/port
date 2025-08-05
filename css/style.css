@@ -63,7 +63,7 @@ ul {
 .hero {
   height: 100vh;
   background: #000;
-  background-image: url('../assets/images/bg1.jpg');
+  background-image: url('../assets/images/bg1.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -588,5 +588,6 @@ body.overlay-open .page-overlay {
   cursor: pointer;
   z-index: 10000;
 }
+
 
 
